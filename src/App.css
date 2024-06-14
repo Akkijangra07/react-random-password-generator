@@ -1,0 +1,15 @@
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+@media screen and (max-width:800px){
+    *{
+        font-size: 3vw;
+    }
+    #box2{
+        width: 100%;
+    }
+}
