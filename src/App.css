@@ -8,8 +8,12 @@
 @media screen and (max-width:800px){
     *{
         font-size: 3vw;
+        
     }
-    #box2{
-        width: 100%;
-    }
+    
 }
+
+button:hover{
+    background-color: tomato;
+}
+

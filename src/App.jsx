@@ -28,11 +28,15 @@ function App() {
     passwordGenerator()
   } , [length , numberAllowed , charAllowed , passwordGenerator])
 
-  const passwordRef = useRef(null);
+  const passwordRef = useRef();
 
   const coptToClipboard = () => {
+    passwordRef.current?.select();
     window.navigator.clipboard.writeText(password);
+    
   }
+
+  
 
   
   
@@ -51,6 +55,7 @@ function App() {
           />
 
           <button 
+          id='btn'
           className='p-2 bg-gray-500 text-white'
           onClick={coptToClipboard}
           >Copy</button>
